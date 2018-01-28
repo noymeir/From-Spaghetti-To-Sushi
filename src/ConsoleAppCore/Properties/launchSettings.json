@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ConsoleAppCore": {
+      "commandName": "Project",
+      "commandLineArgs": "src:Images\\Src dest:Images\\dest"
+    }
+  }
+}
