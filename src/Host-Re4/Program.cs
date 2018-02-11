@@ -1,21 +1,23 @@
-﻿using Autofac;
-using System;
+﻿using System;
+using Autofac;
+using LogicContract;
+using ImageProcessorRe4;
+using LogicModuleRe4;
+using BlurProvider;
+using Model;
 using System.Diagnostics;
-using LogicContracts;
-using LogicModule;
-using ImageProcessContracts;
-using ImageModule;
-using ImageProvider;
-namespace Host
+
+namespace Host_Re4
 {
     class Program
     {
         static void Main(string[] args)
         {
             var container = Register();
-            Ilogic logic = container.Resolve<Ilogic>();
+            ILogic logic = container.Resolve<ILogic>();
+            Args param = new Args(@"Images\Src", @"Images\dest");
             var sw = Stopwatch.StartNew();
-            logic.GetSrcAndDestDirectory(args);
+            logic.StartIoProcess(param);
             sw.Stop();
             Console.WriteLine($"Done: {sw.Elapsed}");
             Console.ReadKey();
@@ -23,13 +25,9 @@ namespace Host
         private static IContainer Register()
         {
             var builder = new ContainerBuilder();
-            builder.RegisterModule<ImageProcessorRegistration>();
-            builder.RegisterModule<LogicRegistration>();
-            builder.RegisterModule<ImageProviderRegistration>();
-
+            builder.RegisterModule<>();
             var container = builder.Build();
             return container;
         }
-
     }
 }

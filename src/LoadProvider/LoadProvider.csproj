@@ -5,15 +5,19 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <OutputPath>C:\Users\MY\Desktop\Projects\From-Spaghetti-To-Sushi\src\debug\AppLogic\</OutputPath>
+    <OutputPath>C:\Users\MY\Desktop\Projects\From-Spaghetti-To-Sushi\src\debug\Realese 4 - Debug\Logic\</OutputPath>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Load.cs" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Autofac" Version="4.6.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ImageProcessContracts\ImageProcessContracts.csproj" />
+    <ProjectReference Include="..\LoadContract\LoadContract.csproj" />
   </ItemGroup>
 
 </Project>

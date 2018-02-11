@@ -12,7 +12,6 @@ namespace ImageProvider
             byte[] photoBytes = File.ReadAllBytes(path);
             string name = Path.GetFileName(path);
             string target = $@"{dest}\{name}.jpg";
-            Console.WriteLine(name);
 
             using (var outStream = new FileStream(target, FileMode.Create))
             {

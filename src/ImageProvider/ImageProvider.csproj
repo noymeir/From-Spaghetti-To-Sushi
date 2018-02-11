@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.6.2" />
     <PackageReference Include="RevStackCore-ImageSharp" Version="0.9.0" />
   </ItemGroup>
 

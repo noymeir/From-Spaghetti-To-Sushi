@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>C:\Users\MY\Desktop\Projects\From-Spaghetti-To-Sushi\src\debug\Realese 4 - Debug\Host\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BlurProvider\BlurProvider.csproj" />
+    <ProjectReference Include="..\GrayScaleProvider\GrayScaleProvider.csproj" />
+    <ProjectReference Include="..\ImageProcessContract\ImageProcessContract.csproj" />
+    <ProjectReference Include="..\ImageProcessorRe4\ImageProcessorRe4.csproj" />
+    <ProjectReference Include="..\ImageProviderContract\ImageProviderContract.csproj" />
+    <ProjectReference Include="..\LoadContract\LoadContract.csproj" />
+    <ProjectReference Include="..\LoadProvider\LoadProvider.csproj" />
+    <ProjectReference Include="..\LogicContract\LogicContract.csproj" />
+    <ProjectReference Include="..\LogicModuleRe4\LogicModuleRe4.csproj" />
+    <ProjectReference Include="..\Model\Model.csproj" />
+    <ProjectReference Include="..\ResizeProvider\ResizeProvider.csproj" />
+    <ProjectReference Include="..\SaveContract\SaveContract.csproj" />
+    <ProjectReference Include="..\SaveProvider\SaveProvider.csproj" />
+    <ProjectReference Include="..\WatermarkProvider\WatermarkProvider.csproj" />
+  </ItemGroup>
+
+</Project>

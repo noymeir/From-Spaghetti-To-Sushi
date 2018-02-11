@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <OutputPath>C:\Users\MY\Desktop\Projects\From-Spaghetti-To-Sushi\src\debug\AppLogic\</OutputPath>
+    <OutputPath>C:\Users\MY\Desktop\Projects\From-Spaghetti-To-Sushi\src\debug\Realese 4 - Debug\Logic\</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,7 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ImageProcessContracts\ImageProcessContracts.csproj" />
+    <ProjectReference Include="..\ImageProcessContract\ImageProcessContract.csproj" />
+    <ProjectReference Include="..\ImageProviderContract\ImageProviderContract.csproj" />
   </ItemGroup>
 
 </Project>

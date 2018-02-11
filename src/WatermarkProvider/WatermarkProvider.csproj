@@ -5,15 +5,16 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <OutputPath>C:\Users\MY\Desktop\Projects\From-Spaghetti-To-Sushi\src\debug\AppLogic\</OutputPath>
+    <OutputPath>C:\Users\MY\Desktop\Projects\From-Spaghetti-To-Sushi\src\debug\Realese 4 - Debug\Logic\</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Autofac" Version="4.6.2" />
+    <PackageReference Include="Magick.NET-Q16-AnyCPU" Version="7.4.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ImageProcessContracts\ImageProcessContracts.csproj" />
+    <ProjectReference Include="..\ImageProviderContract\ImageProviderContract.csproj" />
   </ItemGroup>
 
 </Project>
